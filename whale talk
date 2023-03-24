@@ -1,0 +1,27 @@
+let input = 'hello i love whales';
+let vowels = ['a','e','i','o','u'];
+let resultArray = [];
+ 
+
+for(let inputIndex = 0; inputIndex < input.length; inputIndex++) {
+  if(input[inputIndex] === 'e' ) {
+    resultArray.push(input[inputIndex])
+  }
+
+  if(input[inputIndex] === 'u' ) {
+    resultArray.push(input[inputIndex])
+  }
+  //console.log(`leters are: ${inputIndex}.`)
+  for(let inputVowels = 0; inputVowels < input.length; inputVowels++) {
+//console.log(`vowels are: ${inputVowels}.`)
+if(input[inputIndex] === vowels[inputVowels]) {
+  //console.log(input[inputIndex])
+  resultArray.push(input[inputIndex]);
+}
+  }
+}
+//console.log(resultArray)
+let resultString = resultArray.join('').toUpperCase();
+
+console.log(resultString)
+
